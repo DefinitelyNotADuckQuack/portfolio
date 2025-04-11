@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+         rel="stylesheet"
+         />
+      <title>My Portfolio</title>
+      <link rel="stylesheet" type="text/css" href="css/superslides.css" />
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+      <script>
+         window.addEventListener("scroll", function () {
+           let navbar = document.querySelector(".main-nav"); 
+           let header = document.querySelector("header");
+           let headerBottom = header.offsetTop + header.offsetHeight;
+         
+           if (window.pageYOffset > headerBottom) {
+             navbar.classList.add("fixed");
+           } else {
+             navbar.classList.remove("fixed");
+           }
+         });
+         function openLightbox(src) {
+               let lightbox = document.querySelector(".lightbox");
+               let lightboxImg = lightbox.querySelector("img");
+               lightboxImg.src = src;
+               lightbox.classList.add("active");
+           }
+         
+           function closeLightbox() {
+               document.querySelector(".lightbox").classList.remove("active");}
+      </script>
+      <script
+         src="https://kit.fontawesome.com/a076d05399.js"
+         crossorigin="anonymous"
+         ></script>
+   </head>
+   <body>
+      <div class="loader">
+         <div class="inner"></div>
+      </div>
+      <nav class="main-nav">
+         <a href="#slides">Home</a>
+         <a href="#about">About Me</a>
+         <a href="#portfolio">Portfolio</a>
+         <a href="#contact">Contact</a>
+      </nav>
+      <div id="slides">
+         <div class="overlay"></div>
+         <div class="slides-container">
+            <img src="img/Rupert_and_Adelaide.png" alt="" />
+            <img src="img/Adelaide.png" alt="" />
+            <img src="img/Rupertt.png" alt="" />
+            <img src="img/IMG_4356.PNG" alt="" />
+            <img src="img/IMG_4784.PNG" alt="" />
+            <img src="img/IMG_6430.PNG" alt="" />
+            <img src="img/20240612_060046749_iOS.png" alt="" />
+            <img src="img/Firefly_fanart.png" alt="" />
+            <img src="img/Sunday_anime.png" alt="" />
+         </div>
+         <div class="title-message">
+            <div class="title-heading">
+               <p class="main-title">༻ Art by Iulia Panaite༺</p>
+               <p class="sub-title typed"></p>
+            </div>
+         </div>
+         <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+         </nav>
+      </div>
+      </div>
+      <header>
+         <h1>About Me</h1>
+      </header>
+      <div class="parallax"></div>
+      <section id="about" class="container">
+         <div class="about-container">
+            <div class="about-text">
+               <!-- <h2>About Me</h2> -->
+               <p>
+                  Hi! I'm a 25-year-old freelancer with a strong foundation in programming and a specialization in art, illustration, and 2D animation.
+                  My work sits at the intersection of creativity and technology—I bring ideas to life not just through visuals, but also through code.
+               </p>
+               <p>As a Python full-stack developer, I build responsive, visually engaging websites and applications.
+                  I enjoy combining the precision of programming with the expressive nature of design, creating solutions that are both functional and aesthetically refined. My background in the arts gives me a unique perspective in tech projects, especially when it comes to UI/UX and visual storytelling.
+                  Whether I'm animating a character or structuring an app, I care deeply about detail, clarity, and the user experience.
+                  I also love supporting other creatives and believe that collaboration makes everything better.
+               </p>
+            </div>
+            <img
+               src="img/profile.png"
+               alt="My Profile"
+               width="400"
+               style="border-radius: 10px; box-shadow: 0 4px 20px rgba(228, 53, 144, 0.632)""
+               />
+         </div>
+      </section>
+      <div id="portfolio" class="section hidden">
+         <div class="container">
+            <div class="row">
+               <div class="heading">
+                  <h2> ༻ My Portfolio ༺</h2>
+               </div>
+               <div class="filter">
+                  <ul id="filters">
+                     <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                     <li><a href="#" data-filter=".apps">Apps</a></li>
+                     <li><a href="#" data-filter=".art">Art</a></li>
+                     <li><a href="#" data-filter=".project">Visual Novel Game Project</a></li>
+                     <li><a href="#" data-filter=".web">Web</a></li>
+                  </ul>
+               </div>
+               <div class="itemsContainer">
+                  <ul class="items">
+                     <li onclick="" class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img loading="lazy" src="img/portfolio/thumbnails/Vanitas_thumbnail_ver1.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Vanitas.png" title="View Image" class="openButton" data-fancybox data-caption="Vanitas no Karte">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DEseF0Pqu7z/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li onclick="" class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img loading="lazy" src="img/portfolio/thumbnails/Theodor_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Theodor.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img loading="lazy" src="img/portfolio/thumbnails/Rupertt_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Rupertt.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li onclick="" class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Lorenzo_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Lorenzo.png" title="View Image" class="openButton" data-fancybox data-caption="Lorenzo - Honkai Star Rail Original Character">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C8hz4UsKPp5/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li onclick="" class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Sunday_anime_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Sunday_anime.png" title="View Image" class="openButton" data-fancybox data-caption="Sunday - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DDZj1lvKH60/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li onclick="" class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Rognvald_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Rognvald.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li onclick="" class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Alastor_fanart_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Alastor_fanart.PNG" title="View Image" class="openButton" data-fancybox data-caption="Alastor- Hazbin Hotel">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C7Ex6QdqJKh/" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Firefly_fanart_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Firefly_fanart.png" title="View Image" class="openButton" data-fancybox data-caption="Firefly - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C87djp-qCmx/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Adelaide_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Adelaide.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_4356_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_4356.PNG" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_4784_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_4784.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_6430_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_6430.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Rupert_and_Adelaide_thumbnai.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/Rupert_and_Adelaide.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3484_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3484.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Arlechinno_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Arlechinno.png" title="View Image" class="openButton" data-fancybox data-caption="Arlechinno- Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C6wvyTOq752/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/DrRatio_bathtime_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/DrRatio_bathtime.png" title="View Image" class="openButton" data-fancybox data-caption="Dr Ratio - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DBjMNITKPgm/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/chibi_drratio_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/chibi_drratio.png" title="View Image" class="openButton" data-fancybox data-caption="Dr Ratio - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DGdaWvpqdqi/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/chibi_aventurine_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/chibi_aventurine.png" title="View Image" class="openButton" data-fancybox data-caption="Aventurine - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DDznxZ7K2UX/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Aventurine_brokendoll_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Aventurine_brokendoll.png" title="View Image" class="openButton" data-fancybox data-caption="Aventurine- Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DBa6e5vqKMp/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Aventurine_hey_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Aventurine_hey.png" title="View Image" class="openButton" data-fancybox data-caption="Aventurine - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C5vk828qHrp/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Sunday_yas_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Sunday_yas.png" title="View Image" class="openButton" data-fancybox data-caption="Sunday - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DDKD-d5K-C1/" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Fugue_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Fugue.png" title="View Image" class="openButton" data-fancybox data-caption="Fugue - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DEH8zJDqvan/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Alhaitham_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/Alhaitham.PNG" title="View Image" class="openButton" data-fancybox data-caption="Alhaitham - Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/CviXJ18oBoP/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Diluc_fanart_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/Diluc_fanart.png" title="View Image" class="openButton" data-fancybox data-caption="Diluc - Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Kaeya_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Kaeya.png" title="View Image" class="openButton" data-fancybox data-caption="Kaeya - Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DC_2FR5q9M0/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Neuvillette_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Neuvillette.png" title="View Image" class="openButton" data-fancybox data-caption="Neuvillette - Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/Cv4sb4sIhS3/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Xiao_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Xiao.png" title="View Image" class="openButton" data-fancybox data-caption="Xiao - Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/JhinHweiReunion_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/JhinHweiReunion.png" title="View Image" class="openButton" data-fancybox data-caption="Jhin and Hwei - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C6MV2Keqr3n/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/JhinandHweipuppet_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/JhinandHweipuppet.png" title="View Image" class="openButton" data-fancybox data-caption="Jhin and Hwei - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C6Rom8bKh5J/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20250122_115304283_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20250122_115304283_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="Jhin - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/DBKHqk2qne1/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Hwei_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/Hwei.PNG" title="View Image" class="openButton" data-fancybox data-caption="Hwei - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C6HN3bNKBPJ/" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_4866_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_4866.PNG" title="View Image" class="openButton" data-fancybox data-caption="Hwei - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://www.instagram.com/p/C6WmJBvKuXm/?img_index=1" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_1760_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_1760.PNG" title="View Image" class="openButton" data-fancybox data-caption="Renata - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2712_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2712.png" title="View Image" class="openButton" data-fancybox data-caption="Gankplank - League of Legends">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Lio_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Lio.png" title="View Image" class="openButton" data-fancybox data-caption="Drawing Gift">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Lion_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Lion.png" title="View Image" class="openButton" data-fancybox data-caption="Chibi Lion">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/dwarf_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/dwarf.png" title="View Image" class="openButton" data-fancybox data-caption="Dwarf">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Cyno_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Cyno.png" title="View Image" class="openButton" data-fancybox data-caption="Cyno - Genshin Impact">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_1896_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_1896.png" title="View Image" class="openButton" data-fancybox data-caption="Yor Forger - Spy x Family">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Myua_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/Myua.PNG" title="View Image" class="openButton" data-fancybox data-caption="Original Character">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Myua_cinnamon_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/Myua_cinnamon.PNG" title="View Image" class="openButton" data-fancybox data-caption="Myua- Original Character">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_1875_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_1875.png" title="View Image" class="openButton" data-fancybox data-caption="Original Character">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20220306_172322905_iOS_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/20220306_172322905_iOS.jpg" title="View Image" class="openButton" data-fancybox data-caption="Original Character>
+                                 <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_1814_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_1814.png" title="View Image" class="openButton" data-fancybox data-caption="Chloe - Vanitas no Karte">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2999_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2999.png" title="View Image" class="openButton" data-fancybox data-caption="Drawing Gift">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/prize3_dodtt_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/prize3_dodtt.png" title="View Image" class="openButton" data-fancybox data-caption="Drawing Gift">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20230407_095000618_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20230407_095000618_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="Drawing Gift">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_1950_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_1950.png" title="View Image" class="openButton" data-fancybox data-caption="Alice in Wonderland illustration">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20220616_103530104_iOS_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/20220616_103530104_iOS.jpg" title="View Image" class="openButton" data-fancybox data-caption="Firefly - Honkai Star Rail">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20220616_103446665_iOS_thumbnail.jpg">
+                           <div class="icons">
+                              <a href="img/portfolio/20220616_103446665_iOS.jpg" title="View Image" class="openButton" data-fancybox data-caption="Alice in Wonderland illustration>
+                                 <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240712_094542789_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240712_094542789_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="Alice in Wonderland illustration">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2367_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2367.png" title="View Image" class="openButton" data-fancybox data-caption="Jesse Pinkman - The breaking Bad">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2557_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2557.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2849_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2849.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2323_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2323.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2973_thumbnail.PNG">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2973.png" title="View Image" class="openButton" data-fancybox data-caption="The Path of Letters - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20241126_194933675_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20241126_194933675_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot_2025-03-15 171040_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot_2025-03-15 171040.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot_2025-03-15 171133_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot_2025-03-15 171133.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot_2025-03-15 171200_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot_2025-03-15 171200.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot_2025-03-15 171301_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot_2025-03-15 171301.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 182023_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 182023.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 183229_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 183229.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 182251_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 182251.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 183014_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 183014.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 183419_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 183419.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 183750_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 183750.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 182415_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 182415.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Screenshot 2025-04-03 182429_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Screenshot 2025-04-03 182429.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/snake_game_thumbnail.png">
+                           <div class="icons">
+                              <!-- Link to video instead of image -->
+                              <a href="img/portfolio/test.mp4"
+                                 title="Watch Demo"
+                                 class="openButton"
+                                 data-fancybox
+                                 data-caption="Snake Game"
+                                 data-type="video">
+                              <i class="fa fa-play"></i>
+                              </a>
+                              <!-- Optional link to project -->
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/ping_pong_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/ping_pong.png" title="View Image" class="openButton" data-fancybox data-caption="Ping Pong Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/turtle_road_thumbnaill.png">
+                           <div class="icons">
+                              <a href="img/portfolio/turtle_road.png" title="View Image" class="openButton" data-fancybox data-caption="Turtle crossing the road">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_7763_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_7763.png" title="View Image" class="openButton" data-fancybox data-caption="DreamRift - Visual Novel Game">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/animation_cover.png">
+                           <div class="icons">
+                              <!-- Link to video instead of image -->
+                              <a href="img/portfolio/animation.mp4"
+                                 title="Watch Demo"
+                                 class="openButton"
+                                 data-fancybox
+                                 data-caption="DreamRift - Visual Novel Game"
+                                 data-type="video">
+                              <i class="fa fa-play"></i>
+                              </a>
+                              <!-- Optional link to project -->
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2771_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2771.PNG" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/Luka_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Luka.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_2315_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_2315.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_1954_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_1954.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3654_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3654.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3607_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3607.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3638_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3638.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3633_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3633.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3634_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3634.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3646_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3646.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3648_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3648.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3643_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3643.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_3642_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_3642.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240804_070829122_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240804_070829122_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/KlaussEmilia_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/Klauss_Emilia.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240801_102332180_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240801_102332180_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240728_031931212_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240728_031931212_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240728_031134466_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240728_031134466_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240815_082107053_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240815_082107053_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20241127_214017252_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20241127_214017252_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_6975_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_6975.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/yup3verificare_20241128000118_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/yup3verificare_20241128000118.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240728_002620826_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240728_002620826_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20240722_123346370_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20240722_123346370_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="project col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_4867~2_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_4867~2.png" title="View Image" class="openButton" data-fancybox data-caption="The Path Of Letters - Visual Novel Game Project">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20241021_162845_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20241021_162845.png" title="View Image" class="openButton" data-fancybox data-caption="">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/20250408_125811453_iOS_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/20250408_125811453_iOS.png" title="View Image" class="openButton" data-fancybox data-caption="Chibi Ram">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                     <li class="art col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                           <img src="img/portfolio/thumbnails/IMG_5125~2_thumbnail.png">
+                           <div class="icons">
+                              <a href="img/portfolio/IMG_5125~2.png" title="View Image" class="openButton" data-fancybox data-caption="">
+                              <i class="fa fa-search"></i>
+                              </a>
+                              <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="projectLink">
+                              <i class="fa fa-link"></i>
+                              </a>
+                           </div>
+                           <div class="imageOverlay"></div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="contact-box" class="contactSection section">
+         <div class="col-md-12 text-center">
+            <p class="subHeading">Like what you see?</p>
+            <h2>I'd love to hear from you!</h2>
+            <a href="mailTo:cat@gmail.com" class="contactButton">GET IN TOUCH!</a>
+         </div>
+      </div>
+      <section id="contact" class="container">
+         <div class="contact-container">
+            <div class="contact-text">
+               <h2>༻ Contact Me ༺</h2>
+               <p>Feel free to reach out through any of the platforms below!</p>
+               <div class="social-links">
+                  <a href="https://www.instagram.com/kikuqueen" target="_blank" class="social-icon instagram-icon" aria-label="Instagram"></a>
+                  <a href="https://www.tiktok.com/@quaacktastic" target="_blank" class="social-icon tiktok-icon" aria-label="TikTok"></a>
+                  <a href="https://x.com/CatsConquer" target="_blank" class="social-icon xtwitter-icon" aria-label="X / Twitter"></a>
+                  <a href="https://github.com/DefinitelyNotADuckQuack" target="_blank" class="social-icon github-icon" aria-label="GitHub"></a>
+                  <a href="https://www.linkedin.com/" target="_blank" class="social-icon linkedin-icon" aria-label="LinkedIn"></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <p id="footerSection">&copy; 2025 Iulia Panaite | All rights reserved.</p>
+      </footer>
+      <script src="js/jquery.superslides.min.js"></script>
+      <script src="js/typed.min.js"></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"
+         ></script>
+      <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"> </script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
