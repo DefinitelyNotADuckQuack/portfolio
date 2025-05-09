@@ -57,6 +57,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Improved visibility detection for mobile and initial view
 window.addEventListener("DOMContentLoaded", () => {
   const observedSections = [
     document.querySelector(".about-container"),
@@ -64,25 +65,31 @@ window.addEventListener("DOMContentLoaded", () => {
   ];
 
   const observer = new IntersectionObserver(
-    (entries) => {
+    (entries, observerInstance) => {
       entries.forEach((entry) => {
-        if (
-          entry.isIntersecting ||
-          entry.target.getBoundingClientRect().top < window.innerHeight
-        ) {
+        if (entry.isIntersecting) {
           entry.target.classList.add("show");
+          observerInstance.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.01 }
   );
 
   observedSections.forEach((section) => {
-    if (section) observer.observe(section);
+    if (section) {
+      observer.observe(section);
+
+      // Fallback: add "show" immediately if already visible on load
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        section.classList.add("show");
+      }
+    }
   });
 });
 
-let loadedImageCount = 0; // Counter for lazy-loaded images
+let loadedImageCount = 0;
 
 function loadImage(img) {
   const src = img.getAttribute("data-src");
