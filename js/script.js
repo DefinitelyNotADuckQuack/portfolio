@@ -14,7 +14,7 @@ $(document).ready(function () {
     strings: [
       "Web Developer",
       "Python Developer",
-      "2D Artist Illustrator and Animator",
+      "2D Illustrator and Animator",
     ],
     typeSpeed: 70,
     loop: true,
