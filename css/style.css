@@ -247,12 +247,13 @@ footer {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1000;
+  z-index: 2000;
 }
 .loader .inner {
   width: 100%;
   height: 100%;
   background: url(../img/root_4.gif) center center no-repeat;
+  z-index: 2001;
 }
 .filter a {
   color: #ffffff;
